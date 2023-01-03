@@ -10,6 +10,7 @@ function solution() {
     let ascii = v.charCodeAt(0);
     answer[ascii - 65]++;
   });
+
   let max = Math.max(...answer);
   answer.filter((v) => v === max).length !== 1
     ? console.log('?')
