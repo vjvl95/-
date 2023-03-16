@@ -21,7 +21,6 @@ function solution(s) {
       i++;
     }
   }
-  console.log(answer);
   return answer;
 }
 
