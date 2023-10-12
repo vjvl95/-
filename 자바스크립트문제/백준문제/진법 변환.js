@@ -3,7 +3,7 @@ const filePath = process.platform === 'linux' ? '/dev/stdin' : __dirname + '/inp
 let input = fs.readFileSync(filePath).toString().split('\n');
 
 function solution() {
-  let [N, B] = input[0].split(' ');
-  console.log(parseInt(N, +B));
+  let N = Number(input[0]);
+  console.log(Math.floor(Math.sqrt(N)));
 }
 solution();
